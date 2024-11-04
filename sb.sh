@@ -1379,7 +1379,7 @@ proxies:
   type: hysteria2                                      
   server: $cl_hy2_ip                               
   port: $hy2_port
-  ports: $hy2_ports
+  ports: $(echo $hy2_ports|sed 's/:/-/')
   password: $uuid                          
   alpn:
     - h3
@@ -1931,7 +1931,7 @@ proxies:
   type: hysteria2                                      
   server: $cl_hy2_ip                               
   port: $hy2_port
-  ports: $hy2_ports
+  ports: $(echo $hy2_ports|sed 's/:/-/')
   password: $uuid                          
   alpn:
     - h3
@@ -2451,7 +2451,7 @@ proxies:
   type: hysteria2                                      
   server: $cl_hy2_ip                               
   port: $hy2_port
-  ports: $hy2_ports
+  ports: $(echo $hy2_ports|sed 's/:/-/')
   password: $uuid                          
   alpn:
     - h3
@@ -2915,7 +2915,7 @@ proxies:
   type: hysteria2                                      
   server: $cl_hy2_ip                               
   port: $hy2_port
-  ports: $hy2_ports
+  ports: $(echo $hy2_ports|sed 's/:/-/')
   password: $uuid                          
   alpn:
     - h3
