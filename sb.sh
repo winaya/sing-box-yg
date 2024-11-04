@@ -1378,7 +1378,8 @@ proxies:
 - name: hysteria2-$hostname                            
   type: hysteria2                                      
   server: $cl_hy2_ip                               
-  port: $hy2_port                                
+  port: $hy2_port
+  ports: $hy2_ports
   password: $uuid                          
   alpn:
     - h3
